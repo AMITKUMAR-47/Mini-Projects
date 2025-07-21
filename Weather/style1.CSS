@@ -1,0 +1,78 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    transition: background 1s ease;
+}
+
+.container {
+    max-width: 400px;
+    margin: 60px auto;
+    padding: 32px 24px;
+    border-radius: 18px;
+    background: rgba(255,255,255,0.10);
+    box-shadow: 0 8px 32px 0 rgba(31,38,135,0.27);
+    backdrop-filter: blur(6px);
+    text-align: center;
+}
+
+.title {
+    margin-bottom: 18px;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+}
+#cityInput {
+    width: 70%;
+    padding: 9px;
+    font-size: 1rem;
+    border-radius: 7px;
+    border: 1px solid #a7a7a7;
+}
+#searchBtn {
+    padding: 9px 18px;
+    border: none;
+    border-radius: 7px;
+    background: #4d6ec7;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+#searchBtn:hover {
+    background: #37509b;
+}
+
+.weather-info {
+    margin-top: 32px;
+}
+#weather-icon {
+    width: 80px;
+    margin: 8px 0;
+}
+#temperature {
+    margin-top: 0;
+    font-size: 2.5rem;
+    color: #222;
+}
+#error-message {
+    margin-top: 18px;
+    color: #c24545;
+    font-weight: bold;
+    display: none;
+}
+
+/* Backgrounds set by JS using body.className */
+.sunny { background: linear-gradient(120deg, #ffe259, #ffa751); }
+.clear { background: linear-gradient(120deg, #a1c4fd, #c2e9fb); }
+.rain { background: linear-gradient(120deg, #636fa4, #e8cbc0); }
+.clouds { background: linear-gradient(120deg, #d7d2cc, #304352); }
+.snow { background: linear-gradient(120deg, #e0eafc, #cfdef3); }
+.thunderstorm { background: linear-gradient(120deg, #373b44, #4286f4); }
+.mist, .fog, .haze { background: linear-gradient(120deg, #757f9a, #d7dde8); }
+.night { background: linear-gradient(120deg, #232526, #414345); }
