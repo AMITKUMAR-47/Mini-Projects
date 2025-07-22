@@ -10,7 +10,7 @@ const iconEl = document.getElementById('weather-icon');
 const errorMessage = document.getElementById('error-message');
 
 function setBackground(condition, isNight = false) {
-    // Remove previous backgrounds:
+    
     document.body.className = '';
     if (isNight) {
         document.body.classList.add('night');
@@ -87,5 +87,5 @@ searchBtn.onclick = () => {
 cityInput.addEventListener('keydown', e => {
     if (e.key === 'Enter') getWeather(cityInput.value.trim());
 });
-// Optionally: Fetch weather for default location
+// Fetch weather for default location
 // getWeather('Delhi');
